@@ -1,0 +1,973 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+<link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+
+<link rel="stylesheet" href="css/app.css?ver=1.0">
+<link href="lib/mobiscroll/css/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.frame.android.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.frame.android-holo.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.frame.ios-classic.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.frame.ios.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.scroller.android.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.scroller.android-holo.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.scroller.ios-classic.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+<link href="lib/mobiscroll/css/mobiscroll.android-holo-light.css" rel="stylesheet" type="text/css" />
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/onsen/js/onsenui.js"></script>
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+
+<script src="lib/jquery.form-validator.min.js"></script>
+<script src="lib/noty-2.3.7/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+<link rel="stylesheet" href="lib/animate.css">
+
+<script src="lib/mobiscroll/js/mobiscroll.core.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.frame.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.scroller.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.util.datetime.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.datetimebase.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.datetime.js"></script>
+<script src="lib/mobiscroll/js/mobiscroll.frame.android-holo.js"></script>
+
+<script src="lib/jquery.translate.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+
+<script src="js/config.js?ver=1.0"></script>
+<script src="js/googlemap.js?ver=1.0"></script>
+<script src="js/app.js?ver=1.0"></script>
+</head>
+<body>
+
+<ons-modal var="kloader">
+  <ons-icon icon="fa-circle-o-notch" spin="true"></ons-icon>
+  <br>
+  <br> <span class="trn" data-trn-key="please_wait">Please wait</span>.  
+</ons-modal>
+
+
+<ons-navigator title="Navigator" var="kNavigator">
+  <ons-page id="page-login" >
+  
+  <ons-toolbar> 	
+  </ons-toolbar>
+  
+  <div class="home-header">
+      <img src="css/images/banner.png" alt="" title="">
+   </div> 
+   
+   <form id="frm-login" class="frm-login" method="post">       
+         
+   <div class="wrapper">
+      <div class="field-wrapper">
+      <input type="text" name="username"  class="text-input text-input--underbar has_validation" 
+      placeholder="Username" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="username" >
+      </div>
+
+      <div class="field-wrapper">
+      <input type="password" name="password"  class="password text-input text-input--underbar has_validation" 
+      placeholder="Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="password"  >
+      </div>                    
+   </div>
+   
+   <div class="wrapper">
+	   <button class="button green-btn button--large trn" onclick="login();" data-trn-key="login">
+		Log in		
+	   </button>
+   </div>
+   </form>      
+      
+   <div class="wrapper center">                  
+      <button class="trn button button--quiet green" onclick="showForgotPass();" data-trn-key="forgot_your_pass">
+       Forgot your password?
+       </button>                   
+   </div> 
+  
+</ons-page>
+</ons-navigator> 
+
+<script type="text/ons-template" id="pageLogin.html">    
+<ons-page id="page-login" >
+  
+  <ons-toolbar> 	
+  </ons-toolbar>
+  
+  <div class="home-header">
+      <img src="css/images/banner.png" alt="" title="">
+   </div> 
+   
+   <form id="frm-login" class="frm-login" method="post">       
+         
+   <div class="wrapper">
+      <div class="field-wrapper">
+      <input type="text" name="username"  class="text-input text-input--underbar has_validation" 
+      placeholder="Username" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="username" >
+      </div>
+
+      <div class="field-wrapper">
+      <input type="password" name="password"  class="password text-input text-input--underbar has_validation" 
+      placeholder="Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="password"  >
+      </div>                    
+   </div>
+   
+   <div class="wrapper">
+	   <button class="button green-btn button--large trn" onclick="login();" data-trn-key="login">
+		Log in		
+	   </button>
+   </div>
+   </form>      
+      
+   <div class="wrapper center">                  
+      <button class="trn button button--quiet green" onclick="showForgotPass();" data-trn-key="forgot_your_pass">
+       Forgot your password?
+       </button>                   
+   </div> 
+  
+</ons-page>
+</script>
+
+<script type="text/ons-template" id="forgotPassword.html">    
+  <ons-dialog var="dialogForgotPass" style="width:90%;height:260px;" cancelable  >
+
+  <ons-page id="page-forgotpass" >  
+	  <ons-toolbar> 
+	      <div class="center white trn" data-trn-key="forgot_pass">Forgot Password</div>  	      	      
+	  </ons-toolbar>
+	  
+	  <form id="frm-forgotpass" class="frm-forgotpass" method="post">   
+      <div class="wrapper">
+      
+      <p class="center small-font-dim trn" data-trn-key="forgot_pass_message">
+      Enter your email address you registered<br/>with and we will send you
+      <br/>a unique verification code.
+      </p>
+      
+          <div class="field-wrapper">
+          <input type="text" name="email_address"  class="email_address text-input text-input--underbar has_validation" 
+           placeholder="Email address" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
+          </div>
+      </div>      
+      
+      <div class="wrapper center">
+      <button class="trn button green-btn" onclick="forgotPassword();" data-trn-key="reset_password">
+	  Reset Password	  
+	  </button>
+	  </div>
+	  </form>
+	    
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+<script type="text/ons-template" id="slidemenu.html">
+<ons-page id="page-slidemenu" >
+<ons-sliding-menu main-page="home.html" menu-page="menu.html" side="left" var="menu" close-on-tap type="overlay" >
+</ons-sliding-menu>
+</ons-page>
+</script>
+
+
+<script type="text/ons-template" id="menu.html">
+  <ons-page modifier="menu-page">
+  <ons-list class="main-menu-list">
+    <ons-list-item onclick="setHome();" class="bottom-menu-item" >
+      <ons-icon icon="ion-ios-home-outline"></ons-icon> <span class="trn" data-trn-key="home">Home</span>
+    </ons-list-item>
+        
+    <ons-list-item onclick="menu.setMainPage('bookingHome.html', {closeMenu: true})" class="bottom-menu-item">
+      <ons-icon icon="ion-android-restaurant"></ons-icon> 
+      <span class="trn" data-trn-key="booking_table">Booking Table</span>
+    </ons-list-item>    
+    
+    <ons-list-item onclick="menu.setMainPage('settings.html', {closeMenu: true})" class="bottom-menu-item">
+      <ons-icon icon="ion-gear-a"></ons-icon> 
+      <span class="trn" data-trn-key="settings">Settings</span>
+    </ons-list-item>    
+    
+    <ons-list-item onclick="menu.setMainPage('profile.html', {closeMenu: true})" class="bottom-menu-item">
+      <ons-icon icon="ion-android-contact"></ons-icon> 
+      <span class="trn" data-trn-key="profile">Profile</span>
+    </ons-list-item>    
+    
+    <ons-list-item onclick="logout();" class="bottom-menu-item">
+      <ons-icon icon="ion-log-out"></ons-icon> 
+      <span class="trn" data-trn-key="logout">Logout</span>
+    </ons-list-item>    
+            
+  </ons-list>
+  </ons-page> 
+</script>
+
+<script type="text/ons-template" id="home.html">
+  <ons-page id="page-home" on-device-backbutton="deviceBackButton()" >
+
+    <input type="hidden" name="tab-action" id="tab-action" class="tab-action" value="GetTodaysOrder">
+    <input type="hidden" name="display-div" id="display-div" class="display-div" value="new-orders">
+       
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button ng-click="menu.toggleMenu()"><ons-icon icon="fa-bars"></ons-icon></ons-toolbar-button>
+      </div>              
+      
+      <div class="center white">
+      <span id="search-text" class="trn tab-active-page" data-trn-key="new_order">New Orders</span>
+      </div>      
+      
+     <div class="right no-float">      
+     
+     <ons-toolbar-button onclick="showSearchPopUp();" ><ons-icon icon="ion-search">
+     </ons-icon></ons-toolbar-button>
+     
+    <ons-toolbar-button onclick="showNotificationPage();" ><ons-icon icon="fa-globe"></ons-icon></ons-toolbar-button>
+     </div> 
+                  
+    </ons-toolbar> 
+    
+    <ons-tabbar position="top">
+    
+<ons-tab page="ordersToday.html"active="true" class="tabs">
+ <ons-icon icon="ion-ios-briefcase-outline" class="tabicon"></ons-icon>
+ <p class="trn concat-text" data-trn-key="orders_for_today">Orders for today</p>
+</ons-tab>
+    
+    <ons-tab page="pendingOrders.html" class="tabs">
+    <ons-icon icon="ion-ios-list-outline" class="tabicon"></ons-icon>
+ <p class="trn concat-text" data-trn-key="pending_orders">Pending Orders</p>
+    </ons-tab>    
+    
+    <ons-tab page="allOrders.html" class="tabs">
+     <ons-icon icon="ion-ios-paper-outline" class="tabicon"></ons-icon>
+ <p class="trn concat-text" data-trn-key="all_orders">All Orders</p>
+    </ons-tab>    
+    
+   </ons-tabbar>
+        
+  </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="ordersToday.html">
+  <ons-page id="page-orderstoday">
+  
+   <ons-pull-hook on-action="load(done);" var="loader">
+    <span ng-switch="loader.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim trn"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim trn" data-trn-key="loading_data">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+             
+      <ons-scroller>
+      <ons-list id="new-orders" class="new-orders">                  
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+<script type="text/ons-template" id="pendingOrders.html">
+  <ons-page id="page-pendingorders">
+  
+   <ons-pull-hook on-action="load(done);" var="loader">
+    <span ng-switch="loader.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+             
+    <ons-scroller>
+      <ons-list id="pending-orders" class="pending-orders"  >            
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="allOrders.html">
+  <ons-page id="page-allorders">
+  
+   <ons-pull-hook on-action="load(done);" var="loader">
+    <span ng-switch="loader.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+             
+    <ons-scroller>
+      <ons-list id="allorders-orders" class="allorders-orders"> 
+                 
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+<script type="text/ons-template" id="displayOrder.html">    
+<ons-page id="page-displayOrder">
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div> 
+    <div class="center white" id="order-details-page-title">      
+    </div>   
+    
+    <div class="right">
+    <ons-toolbar-button onclick="viewHistory();"><ons-icon icon="ion-ios-help"></ons-icon></ons-toolbar-button>
+    </div>
+    
+   </ons-toolbar>
+   
+   <input type="hidden" name="order_id" id="order_id" class="order_id">
+   <input type="hidden" name="trans_type" id="trans_type" class="trans_type">
+   
+    <ons-list id="order-details" class="order-details">        
+    </ons-list> 
+    
+    <ons-list id="order-details-item" class="order-details">
+    </ons-list> 
+        
+    <div class="wrapper order-details actions-1">    
+    <ons-row>        
+     <ons-col>     
+     <button class="button green-btn button--large trn" onclick="acceptOrder();" data-trn-key="accept">
+	  Accept
+	  </button>
+     </ons-col>    
+     
+     <ons-col>
+     <button class="button grey-btn button--large trn" onclick="declineOrder();" data-trn-key="decline">
+	  Decline
+	  </button>
+     </ons-col>
+    </ons-row>    
+    </div>
+    
+    <div class="wrapper order-details actions-2">    
+    <ons-row>        
+     <ons-col>     
+     <button class="trn button green-btn button--large" onclick="changeOrderStatus();" data-trn-key="change_order_status">
+	  Change Order Status
+	  </button>
+     </ons-col>              
+     </ons-col>
+    </ons-row>    
+    </div>     
+     
+</ons-page>
+</script>
+
+
+<script type="text/ons-template" id="acceptOrderForm.html">    
+<ons-page id="page-acceptOrderForm">
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div>     
+    <div class="center white trn" data-trn-key="accept">
+      Accept
+    </div>   
+   </ons-toolbar>
+   
+   <div class="wrapper">
+     <form id="frm-acceptorder" class="frm-acceptorder" method="post">
+          
+     <input type="hidden" name="order_id" id="order_id" class="order_id">
+     
+     <div class="field-wrapper">
+      <input type="text" name="delivery_time"  class="delivery_time text-input text-input--underbar has_validation" 
+      placeholder="Delivery Time" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
+      </div>
+      
+      <div class="field-wrapper">
+      <textarea name="remarks" id="remarks" class="text-input text-input--underbar" rows="3" placeholder="Write a comments..." data-trn-key="write_comments"></textarea>
+      </div>
+     
+      <button class="trn button green-btn button--large" onclick="orderConfirm();" data-trn-key="accept_n_confirm">
+	   Accept & Confirm	   
+      </button>
+       
+      <p class="small-font-dim text-center delivery-notes"></p>
+                 
+     </form>
+   </div>
+
+   </ons-page>
+</script>
+
+<script type="text/ons-template" id="declineOrderForm.html">    
+<ons-page id="page-declineOrderForm">
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div>     
+    <div class="center white trn" data-trn-key="decline">
+      Decline
+    </div>   
+   </ons-toolbar>
+   
+   <div class="wrapper">
+     <form id="frm-decline" class="frm-decline" method="post">
+          
+     <input type="hidden" name="order_id" id="order_id" class="order_id">
+     
+     <div class="field-wrapper">
+           
+      <div class="field-wrapper">
+      <textarea name="remarks" id="remarks" class="text-input text-input--underbar" rows="3" 
+      placeholder="Reason.." data-trn-key="reason" ></textarea>
+      </div>
+     
+      <button class="trn button green-btn button--large" onclick="declineConfirm();" data-trn-key="decline_order">
+	   Decline Order
+      </button>
+       
+      <p class="small-font-dim text-center delivery-notes"></p>
+                 
+     </form>
+   </div>
+
+   </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="changesStatus.html">    
+<ons-page id="page-changesStatus">
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div>     
+    <div class="center white trn" data-trn-key="change_status">
+      Change Status
+    </div>   
+   </ons-toolbar>
+       
+     <form id="frm-changestatus" class="frm-changestatus" method="post">
+               
+      <input type="hidden" name="order_id" id="order_id" class="order_id">
+          
+      <ons-scroller class="filter-options" id="status-list">	  
+	  </ons-scroller> 	 	  	  	  
+                    
+      <div class="field-wrapper">
+      <textarea name="remarks" id="remarks" class="text-input text-input--underbar" rows="3" 
+      placeholder="Write a comments..." data-trn-key="write_comments"></textarea>
+      </div>
+     
+      <button class="trn button green-btn button--large" onclick="changeStatus();" data-trn-key="submit">
+	   Submit
+      </button>
+                              
+     </form>
+   
+   </ons-page>
+</script>
+
+<script type="text/ons-template" id="settings.html">    
+<ons-page id="page-settings" on-device-backbutton="setHome()" >
+   <ons-toolbar>     
+   
+    <div class="left">
+     <ons-toolbar-button onclick="setHome();">
+        <ons-icon icon="fa-chevron-left"></ons-icon>
+     </ons-toolbar-button>        
+    </div> 
+         
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="settings">Settings</span></div>
+    
+   </ons-toolbar>
+      
+   <form id="frm-settings" class="frm-settings" method="post">   
+   <input type="hidden" name="country_code_set" id="country_code_set" class="country_code_set">   
+   		   
+   <div class="wrapper">
+     <div class="settings-header trn" data-trn-key="notifications">Notifications</div>
+     <ons-list modifier="inset" class="settings-list">        
+        <ons-list-item >
+          <span class="trn" data-trn-key="enabled_push_notification">Enabled Push Notification</span>
+          <ons-switch modifier="list-item" var="enabled_push" name="enabled_push" id="enabled_push"  ></ons-switch>
+        </ons-list-item>
+      </ons-list>
+      
+      <div class="settings-header trn" data-trn-key="others">Others</div>
+                        
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="chevron" onclick="showLanguageList();" class="trn" data-trn-key="select_your_language">
+          Select your language
+        </ons-list-item>        
+      </ons-list>
+            
+   
+   <button class="button green-btn button--large trn" onclick="saveSettings();" data-trn-key="save">
+	Save	
+   </button>
+   
+   </div>
+   </form>      
+       
+</ons-page>
+</script>
+
+<script type="text/ons-template" id="languageOptions.html">    
+  <ons-dialog var="languageOptions" style="width:90%;height:350px;" cancelable  >
+
+  <ons-page id="page-languageoptions" >  
+	  <ons-toolbar> 
+	      <div class="center white trn" data-trn-key="select_your_language">Select your language</div>   	      	      	      	      
+	      <div class="right">         
+            <ons-toolbar-button onclick="languageOptions.hide();" >
+            <ons-icon icon="ion-checkmark-round"></ons-toolbar-button>
+          </div>
+      
+	  </ons-toolbar>	  	 
+      
+	  <ons-scroller class="language-options" id="language-options-list">	  
+	  </ons-scroller> 	 
+	  	  	  	  	  
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+
+<script type="text/ons-template" id="map.html">    
+<ons-page id="page-location-map">
+   <ons-toolbar>     
+   
+    <div class="left"><ons-back-button></ons-back-button></div>          
+    <div class="center white">
+      <ons-icon icon="ion-android-pin"></ons-icon>
+      <span class="trn" data-trn-key="location">
+      Location
+      </span>
+    </div>
+    
+   </ons-toolbar>
+   
+   <div id="location-map">
+   
+   </div>   
+
+</ons-page>
+</script>   
+
+<script type="text/ons-template" id="lostPassword.html">    
+<ons-page id="page-lostPassword">
+   <ons-toolbar>     
+   
+    <div class="left"><ons-back-button></ons-back-button></div>          
+    
+   </ons-toolbar>
+   
+   <div class="home-header">
+      <img src="css/images/banner.png" alt="" title="">
+   </div> 
+   
+   <form id="frm-changepassword" class="frm-changepassword" method="post">      
+   <input type="hidden" name="email_address" class="email_address" id="email_address">
+   <input type="hidden" name="user_type" class="user_type" id="user_type">
+   
+   <div class="wrapper">
+   <p class="changepass-msg small-font-dim text-center"></p>
+   
+   
+   <div class="field-wrapper">
+   <input type="text" name="code"  class="code text-input text-input--underbar has_validation" 
+   placeholder="Verification code" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="verification_code" >
+   </div>
+   
+   <div class="field-wrapper">
+   <input type="password" name="newpass"  class="newpass text-input text-input--underbar has_validation" 
+   placeholder="New Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="new_password" >
+   </div>
+   
+   <button class="button green-btn button--large trn" onclick="changePassWord();" data-trn-key="change_password">
+	Change Password
+   </button>
+   
+   </div> 
+   
+   </form>
+
+</ons-page>
+</script>   
+
+
+<script type="text/ons-template" id="orderHistory.html">    
+<ons-page id="page-orderHistory">
+
+   <ons-toolbar>        
+    <div class="left"><ons-back-button></ons-back-button></div>              
+    <div class="center white">
+      <span class="order-history-title"></span>
+    </div>
+   </ons-toolbar>
+   
+   <ons-scroller class="order-history order-details" >	  
+     <ons-list id="order-history">
+        
+     </ons-list>
+   </ons-scroller> 	 
+
+</ons-page>
+</script>      
+
+
+<script type="text/ons-template" id="profile.html">    
+<ons-page id="page-profile" on-device-backbutton="setHome()"  >
+   <ons-toolbar>     
+   
+    <div class="left">
+     <ons-toolbar-button onclick="setHome();">
+        <ons-icon icon="fa-chevron-left"></ons-icon>
+     </ons-toolbar-button>        
+    </div> 
+         
+    <div class="center white">    
+    <span id="search-text" class="trn" data-trn-key="profile">Profile</span></div>
+    
+   </ons-toolbar>
+         
+   <form id="frm-profile" class="frm-profile" method="post">      
+   <div class="wrapper">
+     
+    <div class="field-wrapper">
+      <input type="text" name="username"  class="username text-input text-input--underbar has_validation" 
+      placeholder="Username" disabled value="" data-trn-key="username" >
+    </div> 
+    
+    <div class="field-wrapper">
+      <input type="password" name="password"  class="text-input text-input--underbar has_validation" 
+      placeholder="Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="password"  >
+    </div>  
+    
+    <div class="field-wrapper">
+      <input type="password" name="cpassword"  class="text-input text-input--underbar has_validation" 
+      placeholder="Confirm Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="confirm_password" >
+    </div>  
+   
+   <button class="button green-btn button--large trn" onclick="saveProfile();" data-trn-key="update_profile">
+	Update Profile	
+   </button>
+   
+   </div>
+   </form>      
+       
+</ons-page>
+</script>
+
+
+<script type="text/ons-template" id="pushNotification.html">    
+  <ons-dialog var="pushDialog" style="width:90%;height:250px;"  >
+
+  <input type="hidden" name="order_id" id="order_id">
+  
+  <ons-page id="page-notification" >  
+	  <ons-toolbar> 
+	      <div class="center white push-title"></div>   	      	      
+	  </ons-toolbar>
+
+	  <div class="wrapper center pad-top20">
+	  <p class="small-font-dim push-message"></p>
+	  
+	   <p>          
+          <ons-button class="trn button green-btn button--large" onclick="viewOrders();" data-trn-key="view">
+          View</ons-button>
+          <button onclick="pushDialog.hide();" class="button button--quiet trn" data-trn-key="cancel">Cancel</button>
+        </p>
+	  
+	  </div>  
+	  	  	   
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+<script type="text/ons-template" id="pushNotificationCampaign.html">    
+  <ons-dialog var="pushcampaignDialog" style="width:90%;height:250px;"  >
+
+  <ons-page id="page-notificationcampaign" >  
+	  <ons-toolbar> 
+	      <div class="center white push-title"></div>   	      	      
+	  </ons-toolbar>
+
+	  <div class="wrapper center pad-top20">
+	  <p class="small-font-dim push-message"></p>
+	  
+	   <p>          
+          <ons-button class="trn button green-btn button--large" 
+          onclick="pushcampaignDialog.hide();" data-trn-key="ok">
+          Ok
+          </ons-button>          
+        </p>
+	  
+	  </div>  
+	  	  	   
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+<script type="text/ons-template" id="showNotification.html">
+  <ons-page id="page-showNotification">
+      
+  <ons-pull-hook on-action="pullNotification(done);" var="loaderNotification">
+    <span ng-switch="loaderNotification.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim trn"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim trn" data-trn-key="loading_data">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+  
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div> 
+    <div class="center white trn" data-trn-key="notifications">      
+      Notifications
+    </div>      
+  </ons-toolbar>
+  
+     <ons-scroller>
+      <ons-list id="notification" > 
+         
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="SearchPopUp.html" >    
+  <ons-dialog var="SearchPopUpDialog" style="width:90%;height:200px;"  cancelable >
+
+  <ons-page id="page-SearchPopUp" >  
+	  <ons-toolbar> 
+	      <div class="center white trn" data-trn-key="search_order" >Search Order</div>   	      	      
+	  </ons-toolbar>
+
+	  <form id="frm-search" class="frm-search" method="post">       
+	  <div class="wrapper">
+	  
+	  <div class="field-wrapper">
+      <input type="text" name="order_id_customername"  class="order_id_customername text-input text-input--underbar has_validation" 
+      placeholder="Enter Order No or Customer name" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" data-trn-key="enter_order_id_or_customername" >
+      </div>
+	  
+	  </div> 
+	  
+	 <div class="wrapper center">                  
+      <button class="button green-btn button--large trn" onclick="searchOrder();" data-trn-key="search">
+       Search
+       </button>                   
+   </div>  
+	  </form>
+	  	  	  	   
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+<script type="text/ons-template" id="searchResults.html">
+  <ons-page id="page-searchResults">
+      
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div> 
+    <div class="center white trn search_results_found" data-trn-key="search_results">      
+      Search Results
+    </div>      
+  </ons-toolbar>
+  
+     <ons-scroller>
+      <ons-list id="search-resuls" class="new-orders" > 
+         
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="bookingHome.html">
+  <ons-page id="page-bookingHome" on-device-backbutton="setHomeBooking()" >
+      
+  <input type="hidden" name="tab-action" id="tab-action" class="tab-action" value="pendingBooking">
+  <input type="hidden" name="display-div" id="display-div" class="display-div" value="table-pending">
+    
+   <ons-toolbar>          
+    <div class="left">
+       <ons-toolbar-button onclick="setHomeBooking();">
+         <ons-icon icon="fa-chevron-left"></ons-icon>
+       </ons-toolbar-button>        
+    </div> 
+    <div class="center white trn page_label_book" data-trn-key="booking_table">      
+      Booking Table
+    </div>      
+  </ons-toolbar>
+  
+  <ons-tabbar position="top">
+  
+    <ons-tab page="tablePending.html"active="true" class="tabs">
+	 <ons-icon icon="ion-coffee" class="tabicon"></ons-icon>
+	 <p class="trn concat-text" data-trn-key="pending_booking">Pending Booking</p>
+	</ons-tab>
+	
+	<ons-tab page="tableAll.html"  class="tabs">
+	 <ons-icon icon="ion-wineglass" class="tabicon"></ons-icon>
+	 <p class="trn concat-text" data-trn-key="all_booking">All Booking</p>
+	</ons-tab>
+
+  </ons-tabbar>
+     
+  </ons-page>
+</script>
+
+<script type="text/ons-template" id="tablePending.html">
+  <ons-page id="page-tablePending" class="page-booking">
+  
+   <ons-pull-hook on-action="loadTable(done);" var="loaderTable">
+    <span ng-switch="loaderTable.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim trn"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim trn" data-trn-key="loading_data">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+             
+      <ons-scroller>
+      <ons-list id="table-pending" class="list-normal"> 
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+<script type="text/ons-template" id="tableAll.html">
+  <ons-page id="page-tableAll" class="page-booking"> 
+  
+   <ons-pull-hook on-action="loadTable(done);" var="loaderTable">
+    <span ng-switch="loaderTable.getCurrentState()">
+    <span ng-switch-when="initial"><ons-icon size="35px" icon="ion-arrow-down-a">
+    </ons-icon><span class="small-font-dim trn"> Pull down to refresh</span></span>
+    <span ng-switch-when="preaction"><ons-icon size="35px" icon="ion-arrow-up-a">
+    </ons-icon><span class="small-font-dim"> Release to refresh</span></span>
+    <span ng-switch-when="action"><ons-icon size="35px" spin="true" icon="ion-load-d">
+    </ons-icon> <span class="small-font-dim trn" data-trn-key="loading_data">Loading data...</span></span>
+    </span>
+  </ons-pull-hook>
+  
+      <ons-scroller>
+      <ons-list id="table-all" class="list-normal" >                  
+                  
+      </ons-list>
+    </ons-scroller>
+    
+  </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="bookingView.html">
+  <ons-page id="page-bookingView" class="page-bookingView"> 
+  
+    <input type="hidden" name="booking_id" id="booking_id" >
+    <input type="hidden" name="booking_status" id="booking_status" >
+  
+    <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div> 
+    <div class="center white" id="booking-view-title">      
+    </div>   
+    </ons-toolbar>          
+    
+    <ons-list id="booking-details" class="order-details">        
+    </ons-list>     
+    
+     <div class="wrapper order-details booking-action">    
+    <ons-row>        
+     <ons-col>     
+     <button class="button green-btn button--large trn" onclick="bookingApproved();" data-trn-key="accept">
+	  Accept
+	  </button>
+     </ons-col>    
+     
+     <ons-col>
+     <button class="button grey-btn button--large trn" onclick="bookingDenied();" data-trn-key="decline">
+	  Decline
+	  </button>
+     </ons-col>
+    </ons-row>    
+    </div>
+    
+    <div class="wrapper">
+    </div>
+    
+    
+  </ons-page>
+</script>  
+
+
+<script type="text/ons-template" id="bookingForm.html">    
+<ons-page id="page-bookingForm">
+   <ons-toolbar>          
+    <div class="left"><ons-back-button></ons-back-button></div>     
+    <div class="center white booking-form-title" >
+      Accept
+    </div>   
+   </ons-toolbar>
+   
+   <div class="wrapper">
+     <form id="frm-booking" class="frm-booking" method="post">
+          
+      <input type="hidden" name="booking_id" id="booking_id" class="booking_id">
+      <input type="hidden" name="status" id="status" class="status">
+               
+      <div class="field-wrapper">
+      <textarea name="remarks" id="remarks" class="text-input text-input--underbar" rows="3" placeholder="Write a comments..." data-trn-key="write_comments"></textarea>
+      </div>
+     
+      <button class="booking-btn trn button green-btn button--large" onclick="bookingChangeStats();" data-trn-key="getting_booking">	    
+      Getting booking details
+      </button>
+       
+      <p class="small-font-dim text-center booking-notes"></p>
+                 
+     </form>
+   </div>
+
+   </ons-page>
+</script>
+
+
+<script type="text/ons-template" id="pushNotificationBooking.html">    
+  <ons-dialog var="pushDialogBooking" style="width:90%;height:250px;"  >
+
+  <input type="hidden" name="booking_id" id="booking_id">
+  
+  <ons-page id="page-notification" >  
+	  <ons-toolbar> 
+	      <div class="center white push-title"></div>   	      	      
+	  </ons-toolbar>
+
+	  <div class="wrapper center pad-top20">
+	  <p class="small-font-dim push-message"></p>
+	  
+	   <p>          
+          <ons-button class="trn button green-btn button--large" onclick="viewBookings();" data-trn-key="view">
+          View</ons-button>
+          <button onclick="pushDialogBooking.hide();" class="button button--quiet trn" data-trn-key="cancel">Cancel</button>
+        </p>
+	  
+	  </div>  
+	  	  	   
+  </ons-page>
+  </ons-dialog> 
+</script>
+
+</body>

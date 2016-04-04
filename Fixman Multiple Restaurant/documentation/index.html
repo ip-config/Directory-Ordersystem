@@ -1,0 +1,1044 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Karenderia - Multiple Restaurant  System</title>
+	
+	<meta name="description" content="Karenderia Multiple Restaurant System is a restaurant food ordering management.
+that will help you boost your restaurant  sale. it has simple and effective UI  design for ordering.
+">
+	<meta name="author" content="bastikikang">
+	<meta name="copyright" content="bastikikang">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-05-24T11:05:37+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-restaurant-made-easy">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#live_demo" title="Live Demo">Live Demo</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#merchant_administration" title="Administration">Merchant Back Office</a></li>
+			<li><a href="#administration" title="Administration">Admin Back Office</a></li>
+			<li><a href="#sms" title="SMS">SMS</a></li>
+			<li><a href="#updates" title="Updates">Updates</a></li>
+			<li><a href="#migration" title="migration">Server transfer</a></li>
+	        <li><a href="#customize" title="customize">Theme customization</a></li>	
+		    <li><a href="#addons" title="addons">Addons</a></li>		
+			<li><a href="#frequently_asked_questions" title="Frequently Asked Questions">Frequently Asked Questions</a></li>
+			<li><a href="#changelog" title="Changelog">Changelog</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+			<li><a href="#finally" title="Finally">Finally</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright bastikikang 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Karenderia</h1>
+	<h2>Multiple Restaurant System</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 10/06/2014</li>
+	
+	<li>by: bastikikang</li>
+	<li><a href="http://codemywebapps.com/">codemywebapps.com</a></li>
+	<li>email: <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#101;&#109;&#121;&#119;&#101;&#98;&#97;&#112;&#112;&#115;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#101;&#109;&#121;&#119;&#101;&#98;&#97;&#112;&#112;&#115;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="features">
+	<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<p><strong>Merchant Administration Features</strong></p>
+<ul>
+	<li>
+		Easy to manage&nbsp; food item</li>
+	<li>
+		Manage addon category</li>
+	<li>
+		Size&#39;s for food item eg. smal or large</li>
+	<li>
+		Has Option for cooking reference eg.&nbsp; Well done, Medium rare etc</li>
+	<li>
+		Manage address , tax , delivery charges , Receipt Message etc.</li>
+	<li>
+		Send email notification to owner once there is new order.</li>
+</ul>
+<p>
+	Payment Gateway</p>
+<ul>
+	<li>Accept payment using paypal. you can set the paypal to sandbox for testing.</li>
+	<li>Accept Payment using offline credit cards</li>
+</ul>
+<p>
+<p>
+	Reports</p>
+<ul>
+	<li>
+		Sales report</li>
+	<li>
+		Sales report by item</li>
+	<li>
+		Sales summary report</li>
+	<li>
+		All reports can be exported to excel csv file</li>
+</ul>
+<p>
+	Charts</p>
+<ul>
+	<li>
+		Sales charts for last 30 days</li>
+	<li>
+		Sales charts by item</li>
+</ul>
+
+<p><strong>Admin  Features</strong></p>
+<p>Sponsored Listing</p>
+<ul>
+<li>You can simply add any merchant to be on top of the search results.</li>
+</ul>
+
+<p>Membership Packages</p>
+<ul>
+<li>Add your own membership with expiration date and price.</li>
+<li>Package discount</li>
+</ul>
+
+<p>Payment Gateway</p>
+<ul>
+<li>Collect payment using paypal</li>
+<li>Collect payment using offline credit cards.</li>
+</ul>
+
+<p>Social Network</p>
+<ul>
+<li>facebook login</li>
+<li>Social network link</li>
+</ul>
+
+<p>
+	Charts & Reports</p>
+<ul>
+	<li>
+		Merchant membership paymentt reports</li>
+	<li>
+		Merchant Registration report</li>
+</ul>
+
+
+
+<p>&nbsp;
+	</p>
+</section>
+<section id="live_demo">
+	<div class="page-header"><h3>Live Demo</h3><hr class="notop"></div>
+<p>See the Karenderia Multiple Restaurant System in action? </p>
+<p>Front end : <a href="http://multiple-restaurant.codemywebapps.com/">http://multiple-restaurant.codemywebapps.com/</a></p>
+<p>Merchant Back Office: <a href="http://multiple-restaurant.codemywebapps.com/merchant">http://multiple-restaurant.codemywebapps.com/merchant</a></p>
+<p>Username: mcdonalds <br/>Password: mcdonalds</p>
+<p>Admin Back Office: <a href="http://multiple-restaurant.codemywebapps.com/admin">http://multiple-restaurant.codemywebapps.com/admin</a></p>
+<p>Username: admin <br/>Password: admin</p>
+
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	To Install Karenderia Multiple Restaurant System (KRMS) please follow the following easy steps</p>
+<ol>
+	<li>Copy the files to you webserver mostly to your www root or htdocs folder</li>
+	<li>Create database in your server using phpmyadmin or any application to create database in your server</li>
+	<li>Open up your browser and type in this address  http://yourserver.com/install.php  <br/>note: the URL link will depend on the folder where in you install the files
+    <p>You should see the screen below:</p>
+	<img src="assets/images/image_11.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	</li>
+	
+	<li>
+	<p>Enter your database access credential And click next<br/>
+	Note: the database should be created before proceeding with this steps
+	</p>
+	<img src="assets/images/image_12.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	<p>If all process is ok , you should see the screenshot below	
+	</p>
+	<img src="assets/images/image_13.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	</li>
+	
+	<li><p>Enter yur website information</p>
+	<img src="assets/images/image_14.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	<img src="assets/images/image_15.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	<p>After your have successfuly finish the 3 steps you will see the link to your website. like link for administration and merchant</p>
+	</li>
+
+<!--</ol>-->
+
+
+</section>
+<section id="merchant_administration">
+	<div class="page-header"><h3>Merchant Administration</h3><hr class="notop"></div>
+<p>
+	<strong>Dashboard</strong></p>
+<p style="margin-left: 40px;">
+	&nbsp;This page is a preview of your total sales for last 30 day and also here you can see new order for today. you can simply view the order details by clicking the view on the table order list</p>
+	
+	<img src="assets/images/image_1.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	
+<p>
+	<strong>Food Category</strong></p>
+<p style="margin-left: 40px;">
+	this is the page where in you will define your food product category eg. sandwiches , dinner, side etc.</p>
+	
+<img src="assets/images/image_2.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	
+<p>
+	<strong>Food Item</strong></p>
+<p style="margin-left: 40px;">
+	in here you will define the food item by category, define price ,discount and addons.</p>
+	
+	<img src="assets/images/image_3.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	
+<p>
+	<strong>Addon Category</strong></p>
+<p style="margin-left: 40px;">
+	in here you will define the addon category just like the food category</p>
+	
+	<img src="assets/images/image_4.jpg" alt="" title="" style="border:1px solid;width:100%;">
+<p>
+	<strong>Addon Item</strong></p>
+<p style="margin-left: 40px;">
+	same as food item but for addon category</p>
+	
+	<img src="assets/images/image_5.jpg" alt="" title="" style="border:1px solid;width:100%;">
+<p>
+	<strong>Other Item Size </strong></p>
+<p style="margin-left: 40px;">
+	this is where you will define the size&#39;s of your product like small, medium and large</p>
+	<img src="assets/images/image_6.jpg" alt="" title="" style="border:1px solid;width:100%;">
+<p>
+	<strong>Cooking Reference</strong></p>
+<p style="margin-left: 40px;">
+	Manage the cooking reference of your food item eg. well done, rare etc.</p>
+	<img src="assets/images/image_7.jpg" alt="" title="" style="border:1px solid;width:100%;">
+<p>
+	<strong>Store Settings</strong></p>
+<p style="margin-left: 40px;">
+	this is the main settings of your store. define tax , delivery charges any many more..</p>
+	
+	<img src="assets/images/image_8.jpg" alt="" title="" style="border:1px solid;width:100%;">
+		
+<p>
+	<strong>Payment Gateway</strong></p>
+<p style="margin-left: 40px;">
+	KMRS supports paypal & Credit card offline  for collecting payment online, in here you can set the credential of your paypal account.</p>
+	<img src="assets/images/image_9.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	
+<p><strong>Reports</strong></p>
+<p style="margin-left: 40px;">
+	Complete sales report. All reports can be exported to excel.</p>
+		<img src="assets/images/image_10.jpg" alt="" title="" style="border:1px solid;width:100%;">
+	
+</section>
+
+<section id="administration" >
+<div class="page-header"><h3>Admin Back Office</h3><hr class="notop"></div>
+
+<p><strong>Dashboard</strong></p>
+<p style="margin-left: 40px;">
+  This is the main page wherein you can see all the transaction for the last 30 days.
+  merchant registration and merchant payment.
+</p>
+<img src="assets/images/image_16.jpg" alt="" title="" style="border:1px solid;width:100%;">
+
+<p><strong>Merchant List</strong></p>
+<p style="margin-left: 40px;">
+  This sections is where you can find all the merchant who had signup for membership
+  with a status of active and not active or expired membership
+</p>
+<img src="assets/images/image_17.jpg" alt="" title="" style="border:1px solid;width:100%;">
+
+<p><strong>Sponsored List</strong></p>
+<p style="margin-left: 40px;">
+  This sections is where you can add the merchant to be on top list of the results.
+</p>
+<img src="assets/images/image_18.jpg" alt="" title="" style="border:1px solid;width:100%;">
+
+<p><strong>Packages</strong></p>
+<p style="margin-left: 40px;">
+  This sections is where you can add the membership packages.
+</p>
+<img src="assets/images/image_19.jpg" alt="" title="" style="border:1px solid;width:100%;">		
+
+
+</section>
+
+
+<section id="sms" >
+	<div class="page-header"><h3>SMS</h3><hr class="notop"></div>
+	<p>1. Run Cronjobs for SMS Broadcast</p>
+	<p> - in order to process the sms broadcast you will need to run a cron job in yoir server with the time interval of every minute<br/>
+	- folder <strong>cronHelper</strong> should be writable by the server</p>
+	
+	<p>
+	You will need to run the following 4 cron jobs<br/>
+	<strong>curl http://localhost/restomulti/cron/ProcessSMS</strong><br/>
+    <strong>curl http://localhost/restomulti/cron/ProcessBroacast</strong><br/>
+	<strong>curl http://localhost/restomulti/cron/ProcessPayout</strong><br/>
+	<strong>curl http://localhost/restomulti/cron/fax</strong><br/>
+	ofcourse you will need to replace the link with correct address in your server
+	</p>
+	<p>see sample screenshot on how to set your cron jobs</p>	
+	<p>Note: if curl command is not available in your server try using wget command</p>
+	<img src="assets/images/image_20.jpg" alt="" title="" style="border:1px solid;width:100%;">		
+</section>
+
+<section id="updates">
+<div class="page-header"><h3>Updates</h3>
+<hr class="notop"></div>
+<strong>To update to newest version follow the simple steps</strong></p>
+
+<p>When there is new updates on the Karenderia Multiple Restaurant System you have to simply  copy the files except for the <strong>/protected/config</strong> folder and then visit this URL on your server
+<strong>http://yourserver.com/update</strong>
+</p>
+<p>It will automatically update your database table if necessary.</p>
+
+</section>
+
+<section id="migration">
+<div class="page-header"><h3>Server transfer</h3>
+<hr class="notop"></div>
+
+<p>To transfer the kmrs to another server like for instance from your demo to live server
+just follow the simple steps
+
+<ol>
+  <li>Copy all the files from your old to your new server</li>
+  <li>Export your database by dumping the structure and data using phpmyadmin note: do not include the table _view_merchant, _view_order_details and view_ratings
+  this is not ordinary tables</li>
+  <li>Change the htaccess file if necessary. note: this will depends in your new server like example if you install the demo on a folder
+  and you copy all the files to your new server with no folder then you will need to change your htaccess file</li> 
+  <li>Change the file protected/main.php database connection to your new db connection settings</li>
+  <li>Run the update database by visiting your website url http://yourserver.com/update</li>
+</ol>
+</p>
+</section>
+
+<section id="customize">
+<div class="page-header"><h3>Theme customization (Front end)</h3>
+<hr class="notop"></div>
+
+<ol>
+ <li>How to change the css stylesheet
+    <p style="margin:0;">to change the css stylesheet you can find the file on assets/css/store.css</p>
+ </li>
+ <li>How to change the header image that was used 
+    <p style="margin:0;">you can find and replace all the header image on the folder /assets/images</p>
+ </li> 
+ <li>
+   How to change the template
+        <p style="margin:0;">all the templates is located at the folder protected/views/store and the layout is located at protected/views/layouts</p>
+ </li>
+</ol>
+</section>
+
+
+<section id="addons">
+<div class="page-header"><h3>Karenderia Addons</h3>
+<hr class="notop"></div>
+
+<ul>
+<li>Karenderia mobile app <a href="http://codecanyon.net/item/karenderia-mobile-app/13800275" target="_blank">click here</a></li>
+<li>Karenderia merchant receiving app <a href="http://codecanyon.net/item/karenderia-order-taking-app/14423114" target="_blank">click here</a></li>
+<li>Karenderia loyalty points program <a href="http://codecanyon.net/item/karenderia-loyalty-points-program/14296670" target="_blank">click here</a></li>
+<li>Karenderia Merchant Duplicate/Export merchant <a href="http://codecanyon.net/item/kmrs-duplicateexportimport-merchant-addon/13348630" target="_blank">click here</a></li>
+</ul>
+
+</section>
+
+<section id="frequently_asked_questions">
+	<div class="page-header"><h3>Frequently Asked Questions</h3><hr class="notop"></div>
+	<strong>How can i add discount to my product?</strong></p>
+<p style="margin-left: 40px;">
+	to add discount on your product or food item, on the back office menu food item when you add a new item there is a field for discount, and this discount should be in numeric value.</p>
+<p>
+	<strong>Is Karenderia Multiple Restaurant System responsive?</strong></p>
+<p style="margin-left: 40px;">
+	yes the front end of KMRS is responsive, so that your user can easily order using their mobile</p>
+	
+
+<strong>Error uploading image on backend?</strong></p>
+<p style="margin-left: 40px;">
+This usually happens when a PHP is not allowed to create folder,
+to fixed this you will have to create the <strong>upload</strong> folder manually and set the permission to 777.<br/>
+the folder <strong>upload</strong> should be in the main root directory where the KMRS is installed
+</p>
+<strong>Adding item to cart but its empty?</strong></p>
+<p style="margin-left: 40px;">
+this usually happens when the temp folder of your server is not writable
+</p>
+
+</p>
+<strong>After install cannot access /admin or /merchant and /store </strong></p>
+<p style="margin-left: 40px;">
+check your server mod_rewrite or allowed_overwrite is enabled
+</p>
+
+</p>
+<strong>Windows server cannot access /admin or merchant and /store </strong></p>
+<p style="margin-left: 40px;">
+create a file called web.config in your root directory where in you install the kmrs
+and copy the content from <a target="_blank" href="http://multiple-restaurant.codemywebapps.com/helpfiles/windows.web.config.txt">windows.config file</a>
+<br/>
+note: if you install kmrs to a sub folder like /food/ then you will need to change this line
+url="index.php/{R:0} to url="food/index.php/{R:0}
+	
+</section>
+<section id="changelog">
+	<div class="page-header"><h3>Changelog</h3><hr class="notop"></div>
+
+<p>= 3.1 (31 march 16) =</p>	
+<ul>
+  <li>new - add options to remove search by address on advance search options</li>
+  <li>new - add language bar on top</li>
+  <li>new - change the social login layout and position</li>
+  <li>new - disabled button once place order to avoid accidental double click</li>
+  <li>new - add translation for cuisine</li>
+  <li>new - customer cannot apply loyalty points and voucher at the same time</li>
+  <li>new - on menu page make the reviews clickable that will go to reviews tab</li>
+  <li>new - add maxlength of 5  when adding food item and addon qty</li>
+  <li>new - add instragram and youtube channel link on connect with us sections</li>
+  <li>new - add distance calculation for straight line, driving and transit</li>
+  <li>new - add options to switch to new time picker ui this is under tneme settings</li>
+  <li>new - added new sms gateway Swift SMS Gateway</li>
+  <li>new - added new sms gateway Solutionsinfini</li>
+  <li>fixed app link</li>
+  <li>fixed search query which is including not active merchant</li>
+  <li>fixed search by restaurant name query which is including not active merchant</li>
+  <li>fixed ratings on home page</li>
+  <li>fixed ccr to ocr</li>
+  <li>fixed merchant slug </li>
+  <li>fixed review not translating</li>
+  <li>fixed featured resto lineup</li>
+  <li>fixed mobile logo not saving once you saved twice</li>
+  <li>fixed payment options list for membership merchant</li>
+  <li>fixed facebook login</li>
+  <li>fixed meta view port for mobile device</li>
+  <li>fixed auto back when adding a food item in mobile view</li>
+  <li>fixed fixed theme compression functions</li>
+  <li>fixed mobile country on checkout not setting the default country</li>
+  <li>fixed banner small gap on bottom when viewing on chrome browser</li>
+  <li>change cuisine list change id instead of cuisine name</li>
+</ul>
+
+<p>= 3.0 (19 march 16) =</p>
+<ul>
+  <li>fixed remove checking of mobile number on guest checkout</li>
+  <li>fixed search results merchant open if merchant settings close store is set to true</li>
+  <li>fixed change field not showing if only cash on delivery payment options is enabled</li> 
+  <li>fixed search query for restaurant slug</li>
+  <li>fixed cannot save merchant if there is special character on restaurant name</li>
+  <li>fixed add SQL_BIG_SELECTS on search area</li>
+  <li>fixed rechecking of adress before placing orders</li>
+  <li>fixed minimum order currency position on search page</li>
+  <li>fixed add + on the mobile number if sms gateway is nexmo</li>
+  <li>fixed facebook login not saving first name and lastname</li>
+  <li>fixed credit card offline not showing if the only payment options is offline credit card</li>
+  <li>fixed offline credit card list showing other credit cards</li>
+  <li>fixed adding of credit card using guest checkout</li>
+  <li>fixed delivery fee not on backend receipt</li>
+  <li>fixed createslug functions</li>
+  <li>fixed donnot combine order if the special instruction is different</li>
+  <li>fixed addon price not formating correctly</li>
+  <li>fixed food item wil be separated if has different instruction</li>
+  <li>fixed remove view restaurant by map options on admin settings</li>
+  <li>fixed receipt email including ingredients</li>
+  <li>fixed admin voucher can be used if applicable to merchant</li>
+  <li>fixed receipt not including tips</li>
+  <li>fixed receipt not including loyalty points</li> 
+  <li>fixed move voucher after customer signin</li>
+  <li>(new) Front end design and layout</li>
+  <li>(new) add html compression</li> 
+  <li>(new) using boottrap</li>
+  <li>(new) theme settings</li>
+  <li>(new) cookie law policy</li>
+  <li>(new) website compression</li>
+  <li>(new) custom footer options</li> 
+  <li>(new) options to control the top menu</li> 
+  <li>(new) mobile app link options</li>
+  <li>(new) options to disable merchant menu tabs</li>  
+  <li>(new) customer signup email verification</li>
+  <li>(new) mobile paypal settings on admin & merchant panel</li>
+  <li>(new) add new features for assigning page to two columns</li>
+</ul>
+
+<p>= 2.6 (31 October 15) =</p>
+<ul>
+  <li>fixed not redirecting after mobile code verification page</li>
+  <li>fixed Order SMS, {customermobile} display as Merchant Number</li>
+  <li>fixed sms verification spam protection</li>
+  <li>fixed view restaurant by map</li>
+  <li>add more sms available tags</li>
+  <li>add smsGlobal gateway</li>
+  <li>add options to search by post code, by area/city and by address</li>
+</ul>
+
+<p>= 2.5 (24 October 15) =</p>
+<ul>
+<li>fixed facebook login conflict with google captcha</li>
+<li>fixed ask address google list address behind the form</li>
+<li>fixed generating merchang slug</li>
+<li>fixed contact page email validation</li>
+<li>fixed sms sending of sms to merchant and client </li>
+<li>fixed cart not adding correctly if size is different</li>
+<li>fixed booking table link showing on search results if admin disabled the booking features</li>
+<li>fixed upload file which generating same id</li>
+<li>fixed menu if admin disabled ordering the menu is not responsive</li>
+<li>add confirm password on customer and merchant signup </li>
+<li>add order status history</li>
+<li>add options to send order sms verification code on place order to avoid fake orders</li>
+<li>add food item gallery</li>
+</ul>
+
+<p>= 2.4 (17 October 15) =</p>
+<ul>
+ <li>fixed merchang signup type of service not saving</li>
+ <li>fixed custom page slug issue</li>
+ <li>fixed non taxable delivery charge</li> 
+ <li>fixed mobile menu</li>
+ <li>fixed customer receiving 2 emails when using smtp</li>
+ <li>fixed login/signup popup responsive</li> 
+ <li>fixed checking of minimum order if transaction type is pickup during payment options</li>
+ <li>fixed menu that shows deleted food item</li>
+ <li>fixed popup address not translating the required fields</li> 
+ <li>fixed sms not adding the customer address tag</li>
+ <li>fixed merchant date/time displayed on menu page</li>
+ <li>Remove the ability for a user to make unlimited review per order. user can do one review per order.</li> 
+ <li>fixed add to cart function it will increase the quantity of  the item if the item is the same</li>
+ <li>fixed customer review </li>
+ <li>fixed popup food item jumping to top of the page (you need to ovewrite the file assets/vendor/fancybox/source/jquery.fancybox.js)</li> 
+ <li>move Offline Credit Card Payment settings on payment gateway</li>
+ <li>move paypal on/off settings on paypal payment gateway</li>
+ <li>fixed check if there is any package published before displaying membership signup</li> 
+ <li>fixed customer cannot choose delivery/pickup time had already past</li>
+ <li>reconstruct front end layout template in terms of requiring css and js file</li>
+ <li>remove all css text transform to capitalize issue with different language</li> 
+ <li>fixed merchant withdrawals</li>
+ <li>fixed booking table section not responsive</li>
+ <li>add update link on admin panel dashboard</li> 
+ <li>add option to set default language on merchant and admin panel</li>
+ <li>add options to hide the language bar on admin and merchant panel</li>
+ <li>add price on addon item on merchant backend</li> 
+ <li>add multiple time slot</li>
+ <li>add option for merchant to select or based the changing of order status on delivery/pickup date or date of order</li>
+ <li>add options for the table booking to accept booking on the same day</li> 
+ <li>add options for the admin to disabled merchant can add their own order status</li>
+ <li>add user review per order refference on admin & merchant backend</li>
+ <li>add options to disabled or hide food item if not available</li> 
+ <li>add options for the view map to set the default zoom and disabled map on front end</li>
+ <li>add options to change the default purchase email subject</li>
+ <li>add options to disabled table booking by website owner</li> 
+ <li>add options for admin to disabled sending of sms after merchang changing the status of the order</li> 
+ <li>add options for admin to disabled the popup asking for customer address</li>   
+ <li>add options for the admin to change the default social shared text</li> 
+ <li>add security google captcha features</li> 
+ <li>add options to switch merchant from membership to commission</li>   
+ <li>add options to send email after merchant change the order status</li> 
+ <li>add google captcha before placing order to avoid fake order</li> 
+ <li>add blocking of mobile number and email address</li>    
+ <li>add admin options to blocked customer email address and mobile number during registration and login</li>    
+ <li>add send welcome email to first time customer registration</li>     
+</ul>
+
+<p>= 2.3 (17 August 15) =</p>
+<ul>
+ <li>fixed menu responsive layout</li>
+ <li>add forgot password during checkout</li>
+ <li>add option non taxable for food item</li>
+ <li>add option non taxable for delivery charges </li>
+ <li>add option to add custom fields on customer registration</li>
+ <li>add voucher code to be used only once</li>
+</ul>
+
+<p>= 2.2.1 (31 June 15) =</p>
+<ul>
+  <li>fixed update controller missing table fields</li>
+  <li>fixed admin reviews not working</li>
+  <li>fixed facebook login using facebook api v2.4</li>
+  <li>fixed error when adding food category</li>
+  <li>fixed delivery rates when address has been change during checkout</li>
+  <li>fixed if only one payment is enabled it will be the default payment no need to tick during checkout</li>
+  <li>fixed sticky category on chrome and safari</li>
+  <li>fixed google login during checkout</li>
+  <li>fixed view map</li>
+  <li>fixed merchant add offers</li>
+  <li>fixed Withdrawal default payout account</li>
+</ul>
+
+<p>= 2.2 (25 June 15) =</p>
+<ul>
+<li>fixed pay on deliver not showing on merchant</li>
+<li>fixed checkout when type of transaction is pickup</li>
+<li>fixed popup food item to have a default selected price</li>
+<li>fixed translation for = Showing 0 to 0 of 0 entries</li>
+<li>fixed add type of card on receipt when paying using pay on deliver</li>
+<li>fixed sponsored merchant not adding when expiration date format is not yyyy-mm-dd</li>
+<li>add status field on addon category</li>
+<li>fixed navigation when searching by post code</li>
+<li>fixed if merchant is expired merchant link is still active</li>
+<li>fixed if merchant is expired merchant link is still active</li>
+<li>fixed meta description and keywords to include merchant name tag</li>
+<li>fixed discount price not showing on menu 1 and 2</li>
+<li>fixed remove delivery fee if transaction is pickup</li>
+<li>fixed voucher</li>
+<li>add google login</li>
+<li>add receipt logo</li>
+<li>add admin permission access controller</li>
+<li>add support currency symbol for indian Rupee</li>
+<li>add review management on admin panel</li>
+<li>remove spicy dish and replace it with dish management on admin panel</li>
+<li>remove the header with backround template instead use the standard menu template</li>
+<li>menu - add sticky cart options</li>
+<li>menu - move the category to the left as sticky</li>
+<li>menu - add merchant information tab</li>
+<li>menu - remove delivery Distance Covered,Delivery Fee if transaction type is pickup</li>
+<li>add admin vouchers</li>
+<li>add multiple translation for food</li>
+<li>add option for search result by distance not name</li>
+<li>add tab for restaurant information</li>
+<li>change menu layout</li>
+<li>remove delivery when transtype if pickup</li>
+<li>include options to include offline payment in admin balance</li>
+<li>add option to add google api key</li>
+<li>add one more delivery address during checkout</li>
+<li>add options to select address from the map</li>
+<li>add address book </li>
+<li>add BHASHSMS SMS Gateway</li>
+<li>add view restaurant by map</li>
+</ul>
+	
+<p>
+	= 2.1 (19 June 15) =</p>
+<ul>
+  <li>merchant - add food item to have two flavor options</li>
+  <li>admin - add option to choose fixed or percentage comission</li>
+  <li>fixed delivery table on search results</li>
+  <li>fixed add to cart pop color if adding to cart is successful</li>
+  <li>fixed pay on deliver payment not showing if merchant is commission type</li>
+  <li>fixed epaybg when purchasing sms credits</li>
+  <li>add options to include any cash payment eg. COD on merchant balance</li>
+  <li>fixed twilio sms error - The message body exceeds the 160 character limit</li>
+  <li>fixed if item have ingredients or cooking reference it will not be auto add cart instead a popup will show</li>
+  <li>fixed mobile number not saving on receipt</li>
+  <li>make "Apartment suite, unit number, or company name" – required</li>
+  <li>add sending of sms test functions on sms settings</li>
+  <li>add option for merchant to disabled ordering</li>
+  <li>add option to disable review editing from merchant</li>
+  <li>add option for date format and time format</li>
+  <li>add  required options for addon item</li>
+  <li>add customer registration mobile verification</li>
+  <li>add options to disabled popup login & signup and use a normal page instead</li>
+  <li>add options to disabled single food item auto add to cart</li>
+  <li>Fixed paypal payment if merchant is commission base</li>
+</ul>
+	
+<p>
+	= 2.0 (31 May 15) =</p>
+<ul>
+  <li>fixed search result if merchant has no coordinates</li>
+ <li>fixed if user is on profile page and he logouts and the page stays on profile page</li>
+ <li>fixed merchant signup if merchant name has special characters</li>
+ <li>fixed merchant signup if Disabled Verification is on.</li>
+ <li>fixed delivery fee added when paying paypal if transaction is pickup</li>
+ <li>fixed search results if filtered by free delivery (if merchant has delivery fee tables)</li>
+ <li>improve search results speed</li>
+ <li>improve cart querying of records</li>
+ <li>improve admin merchant list querying of records</li>
+ <li>fixed zoom size on map for wide coverage of the map</li>
+ <li>fixed table reservation if date and time is not on opening hours of the restaurant</li>
+ <li>add checking of date and time during checkout</li>
+ <li>admin - add reviews option only accept reviews for those who had actual purchase on the merchant</li>
+ <li>merchant - fixed merchant balance to exclude any cash payment</li>
+ <li>merchant - fixed merchant sms notification when mobile number is multiple (separated by comma)</li>
+ <li>add cash/card payment type options on merchant statement report</li>
+ <li>add cash or card payment options on admin commission report</li>
+ <li>add options to send sms when the order status is change</li>
+ <li>add options to addd terms and condition during merchant signup and customer sigup</li>
+ <li>fixed merchant notification by email if merchant notification email is multiple</li>
+ <li>add options for the decimal and comma separation</li>
+ <li>fixed fax text being squeeze </li>
+ <li>fixed customer delivery address when purchasing second time</li>
+ <li>merchant - add packaging options for increasing packaging per item</li>
+ <li>merchant user -  add permission to published merchant</li>
+ <li>add option to add food item directly to cart ( if food item is single only without addon and sizes) </li>
+ <li>add card fee on paypal payment</li>
+ <li>merchant - add minumum and maximum order for pickup transaction</li>
+ <li>Add tips during checkout</li>
+</ul>	
+
+<p>
+	= 1.0.9 (11 May 15) =</p>
+<ul>
+    <li>Fixed paypal not match total amount</li>
+	<li>Fixed merchant commission report</li>
+	<li>Fixed search results</li>
+	<li>Fixed sending email to customer when customer purchase then logout</li>
+	<li>Fixed Merchant Sales Summary Report</li>
+	<li>Fixed Spicy Dish not translated</li>
+	<li>Fixed guest checkout when choosing pickup</li>
+	<li>Fixed merchant slug when adding merchant</li>
+	<li>Add validation on delivery time and pickup time</li>
+</ul>
+		
+<p>
+	= 1.0.8 (5 May 15) =</p>
+<ul>
+    <li>Add Commission</li>
+	<li>Add Withdrawal</li>
+	<li>Add Mandrill API For sending Email</li>
+	<li>Add Merchant Commission Signup</li>
+	<li>Add Sending of email</li>
+	<li>Add BarclayCard Payment Gateway</li>
+	<li>Add EpayBg Payment Gateway</li>
+	<li>Add Fax Services</li>
+	<li>Add Fax Packages</li>
+	<li>Add Fax Logs</li>
+	<li>Add Fax Payment Transaction</li>
+	<li>Add Merchant Sales Summary Report</li>
+	<li>Add Booking Summary Report</li>
+	<li>Add Website Security</li>
+	<li>Add Guest Checkout</li>
+	<li>Add Website Timezone</li>
+	<li>Add Option to disabled Ordering</li>
+	<li>Add Option to hide the food item price</li>
+	<li>Move the Menu layout options from merchant to admin panel</li>
+	<li>Featured restaurant can activated on merchant information</li>
+	<li>Add options number of days that merchan can change the status</li>
+	<li>Add options to disabled offline credit card payment</li>
+	<li>Add ABN fields on merchant registration</li>
+	<li>Add Spicy dish on food item</li>
+	<li>Add Spicy dish on food category</li>
+	<li>Add Ingredients</li>
+	<li>Add Delivery Distance Charges Rates</li>
+	<li>Add Free delivery above Sub Total Order</li>
+	<li>Add Merchant Commission Statement</li>
+	<li>Add Merchant Commission Earnings</li>
+	<li>Add Merchant Commission Withdrawals</li>
+	<li>Add Merchant Purchase Credit Transactions</li>
+	<li>Add Merchant Fax Services</li>
+	<li>Add Merchant Booking Summary Report</li>
+	<li>Fixed SMS purchase when Choosing Bank Deposit Payment</li>
+	<li>Fixed Security issue during login</li>
+	<li>Fixed Mobile number fields by adding mobile country code</li>
+	<li>Fixed Search merchant slow processing</li>
+	<li>Fixed Merchant user can have the same usernamer and password</li>
+	<li>Add Language Pack</li>
+	<li>And Many more .....</li>
+</ul>		
+<p>
+	= 1.0.7 (24 Mar 15) =</p>
+<ul>
+    <li>Add 2 menu layout options for merchant</li>
+	<li>Add Unicode options for Clickatell and Nexmo</li>
+	<li>Add Sender fields for clickatell</li>
+	<li>Fixed Order not showing if credit card payment method was use</li>
+	<li>Fixed merchant offers cannot add more than one offers</li>
+	<li>Fixed missing pickup time and pick date if transaction is pickup</li>
+	<li>Fixed featured restaurant not showing if some of the image is missing</li>
+	<li>Fixed search results hours of operation been cut off</li>
+	<li>Fixed map</li>
+	<li>Fixed Merchant name at check out page SEO titles</li>
+	<li>Fixed no access if user created accessing the following, purchase sms credits, table booking and all payment gateway</li>
+</ul>
+
+<p>
+	= 1.0.6 (20 Mar 15) =</p>
+<ul>
+    <li>Add featured restaurant</li>
+	<li>Add subscription</li>
+	<li>Add subscription list on admin panel</li>
+	<li>Add bulk upload merchant as CSV</li>
+	<li>Add discount on food item</li>
+	<li>Remove Delivery date and time when transaction is pickup</li>
+	<li>Add options to add custom link in custom page</li>
+	<li>Add pay on delivery</li>
+	<li>Add clickatell SMS gateway</li>
+	<li>Add SMS Logs on admin panel</li>
+	<li>Add upload Google map marker</li>
+	<li>Add Global email sender fields</li>
+	<li>Add Email template sents to customer</li>
+	<li>Add Email template sents to merchant</li>
+	<li>Add Email send to merchant to confirm or set the status of the order as receive</li>
+	<li>Add Merchant Offers such as discount</li>
+	<li>Add Speacial email to merchant with a link to confirm order received</li>
+	<li>Fixed when user ordered in 2 different restaurant at the same time</li>
+	<li>Fixed order was saved in the database before it was paid by the customer</li>
+	<li>Fixed if the cuisine has too long</li>
+	<li>Fixed overflow cuisine on search resilts</li>
+	<li>Fixed paypal error order does not match with the total</li>
+	<li>Fixed SMS cron jobs</li>
+	<li>Fixed when created user purchase sms</li>
+</ul>
+	
+<p>
+	= 1.0.5 (03 Mar 15) =</p>
+<ul>
+    <li>Add advanced search, user can search by restaurant name, streetname, cuisine and by food item</li>
+	<li>Add google map address on search results</li>
+    <li>Add food packaging charge</li>
+	<li>Add Nexmo SMS gateway </li>
+	<li>Client list add export functions ready to import in mailchimps mailing list</li>
+	<li>Option to enabled/disabled merchant payment gateway</li>
+	<li>Option to enabled/disabled SMS on merchant</li>
+	<li>Add auto login to merchant</li>	
+	<li>Add Restaurant Gallery</li>
+	<li>Add option to change the position of the currency to left or right position</li>
+	<li>Add SMTP functions for sending emails</li>
+	<li>Fixed library when server is using secure website (HTTPS)</li>
+	<li>Fixed insert problem after entering or adding food item</li>
+	<li>Fixed cart when ordering on different merchant</li>
+	<li>Add option to set the maximum booking tables per day</li>
+	<li>Add contact field on customer list</li>
+	<li>Add option to view orders from admin panel</li>
+	<li>Add change field when ordering</li>
+	<li>Add Country restriction or set specific country on merchant signup</li>
+	<li>Add options to open in a new window in custom page</li>
+	<li>Add Full order details in SMS</li>
+	<li>Add options for SEO titles</li>
+	<li>Add option to set restaurant holidays or restaurant dayoff</li>
+	<li>Fixed map when viewing on mobile</li>
+	<li>Add forgot password in admin panel</li>
+	<li>Add payment gateway Paysera</li>
+	<li>Add Offline payment when buying SMS credits</li>
+	<li>Add Email template for merchant activation and forgot password</li>
+	<li>Fixed Addon not displaying on front end</li>
+	<li>Fixed image not displaying on front end</li>
+	<li>Fixed utf8 character encoding when sending emails</li>
+	<li>Fixed Offline payment gateway</li>
+</ul>
+
+<p>
+	= 1.0.4 (26 Dec 14) =</p>
+<ul>
+    <li>Add Incoming orders from different merchant on admin panel</li>
+	<li>Add merchant sales report  on admin panel</li>
+	<li>Add Offline bank deposit payment</li>
+	<li>Add bank deposit verification</li>
+	<li>Add Receive bank deposit list on admin panel</li>
+	<li>Add table booking notification</li>
+	<li>Add table booking email alert</li>	
+	<li>Add table booking email for approved and denied </li>
+	<li>Fixed Receipt when viewing on merchant panel</li>
+	<li>Remove delivery charges when the transaction type is pickup</li>
+	<li>Fixed getting google map latitude and longtitude on merchant and admin</li>
+	<li>Fixed Merchant name on top when the merchant name is too long</li>
+	<li>Add upload security for running php scripts on upload folder</li>
+	<li>Add security that only admin can upload language php file</li>
+	<li>Fixed map on browse restaurant</li>
+	<li>Fixed browse restaurant page when viewing on mobile</li>
+	<li>Remove sub header when viewing on mobile</li>
+	<li>Fixed amount on order when there is a number on sizes</li>
+	<li>Add Text editor for email template</li>
+</ul>
+
+<p>
+	= 1.0.3 (08 Dec 14) =</p>
+<ul>
+    <li>Add Table booking</li>
+	<li>Add Business open/close hours checking</li>
+	<li>Add Merchant timezone seletion</li>
+	<li>Fixed home search to use radius when searching for restaurant</li>
+	<li>Add Country field for merchant signup</li>
+	<li>Add Country field on merchant backend</li>
+	<li>Add Customer list on admin panel</li>
+	<li>Add functions for adding google analytics code</li>
+	<li>Add payment gateway PayUMoney</li>
+	<li>Add payment gateway Sisow</li>
+	<li>Add google map dragable marker</li>
+	<li>Add payment history in merchant backend</li>
+	<li>Add Kilometers options for merchant</li>
+	<li>Add pre-order options</li>
+	<li>Add Restaurant Social sharing</li>
+	<li>Add Maximum order field merchant</li>
+	<li>Merchant Add field for close message </li>
+	<li>Fixed Upload files that overwrite the files if the filename is the same</li>
+	<li>Fixed Translation specially the Date and hours on admin panel and merchant</li>
+</ul>	
+<p>
+	= 1.0.2 (12 Nov 14) =</p>
+<ul>
+    <li>Add SMS gateway - twilio </li>
+	<li>Add SMS Module - merchant will purchase sms credits to site owner.</li>
+	<li>Add SMS Broadcast - merchant can send bulk sms to customer for offers and promo</li>
+	<li>Add SMS notification to merchant when there is new order.</li>
+	<li>Add SMS Transaction report</li>
+	<li>Add limit to sell of merchant</li>
+	<li>Add Mobile number in registration</li>
+	<li>Add field for merchant website</li>
+	<li>Add Mercadopago Payment Gateway</li>
+	<li>Add Automatic detection of customer location using google api</li>
+	<li>Add auto fill address using google api</li>
+	<li>Add Direction guide on merchant map using google api </li>
+	<li>Add geo decode functions that convert address  to latitude and longtitude</li>
+	<li>Add Voucher Management</li>
+	<li>Add Voucher Codes that will apply discount</li>
+	<li>Add Ajax notification when there is new order, a pop up will appear with sounds.</li>
+	<li>Add ACL System. To divide cook from manager from restaurant owner. So each have access to specific areas.</li>
+	<li>Add customer reviews management</li>
+	<li>Add Browse restaurant</li>
+	<li>Add Customer change address </li>
+	<li>Fixed Translation when setting default language</li>
+    <li>Fixed When adding credit card information</li>
+	<li>Fixed Merchant thumbnail image</li>
+</ul>
+
+
+<p>
+	= 1.0.1 (14 Oct 14) =</p>
+<ul>
+	<li>Add Translation module</li>
+	<li>Add SEO</li>
+	<li>Merchant can add their own Header/Background</li>
+	<li>Add Settings for Delivery Distance</li>
+	<li>Add Stripe Payment Gateway</li>
+	<li>Add Email notification when there is new order placed</li>
+    <li>Fixed Email receipt</li>
+	<li>Fixed Installation issue</li>
+</ul>
+
+
+
+<p>
+	= 1.0 (06 Oct 14) =</p>
+<ul>
+	<li>
+		Initial release version</li>
+</ul>
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<p>
+	Thanks so much to</p>
+<ul>
+	<li>
+		<a href="http://jquery.com/">Jquery</a></li>
+	<li>
+		<a href="http://www.yiiframework.com/">Yii Framework</a></li>
+	<li>
+		<a href="http://labs.abeautifulsite.net/archived/jquery-alerts/demo/">Jalert</a></li>
+	<li>
+		<a href="http://formvalidator.net/">formvalidator</a></li>
+	<li>
+		<a href="http://bxslider.com/">Bxslider</a></li>
+	<li>
+		<a href="https://datatables.net/">DataTables</a></li>
+	<li>
+		<a href="http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/">Direction-Aware Hover Effect</a></li>
+	<li>
+		<a href="http://fancyapps.com/fancybox/">fancybox</a></li>
+	<li>
+		<a href="http://www.jqplot.com/">jqplot</a></li>
+	<li>
+		<a href="http://getuikit.com/">uikit</a></li>
+	<li>
+		<a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+	<li>
+		<a href="http://getbootstrap.com/">Boostrap 3</a></li>
+	<li>
+		<a href="http://areaaperta.com/nicescroll/">jquery.nicescroll</a></li>
+    <li><a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a></li>
+	<li><a href="http://harvesthq.github.io/chosen/">Chosen</a></li>
+	<li><a href="https://github.com/fronteed/iCheck">ICheck</a></li>
+	<li><a href="http://colpick.com/plugin">Colpick</a></li>
+	<li><a href="http://jplayer.org/">JPlayer</a></li>
+	<li><a href="http://codemirror.net/">CodeMirror</a></li>
+	<li><a href="https://github.com/chjj/marked">Marked</a></li>
+	<li><a href="http://html2pdf.fr/en/default">HTML2PDF</a></li>
+	<li><a href="http://projects.erikzaadi.com/jQueryPlugins/jQuery.printElement/">jQuery Print Element</a></li>
+	
+    <li><a href="http://ionicons.com/">ionicons</a></li>
+    <li><a href="https://github.com/rstacruz/nprogress">nprogress</a></li>
+    <li><a href="http://pixelcog.github.io/parallax.js/">Parallax.js</a></li>
+    <li><a href="https://github.com/wbotelhos/raty">raty</a></li>
+    <li><a href="http://imakewebthings.com/waypoints/">waypoints</a></li>
+    <li><a href="https://github.com/WeCodePixels/theia-sticky-sidebar">theia-sticky-sidebar</a></li>
+    <li><a href="https://hpneo.github.io/gmaps/">gmaps.js</a></li>
+    <li><a href="http://jedfoster.github.io/Readmore.js">readmore.js</a></li>
+    <li><a href="http://miromannino.github.io/Justified-Gallery/">Justified Gallery</a></li>
+    <li><a href="https://github.com/carhartl/jquery-cookie">Jquery Cookie</a></li>
+	
+	 <li><a href="http://timepicker.co/options/">jQuery TimePicker</a></li>
+</ul>
+<p>&nbsp;
+	</p>
+</section>
+<section id="finally">
+	<div class="page-header"><h3>Finally</h3><hr class="notop"></div>
+<p>
+	I spent a lot of time on this thing. Nevertheless it&#39;s still not finished. I like to improve it wherever I can and appreciate your feedback. I&#39;d be glad to help you if you have any questions relating to this plugin. No guarantees, but I&#39;ll do my best to assist.</p>
+</section>
+
+	</div>
+</body>
+</html>

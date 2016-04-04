@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "kmrs.merchant.app"
+    version   = "1.0.0">
+    <name>Karenderia Order Taking App</name>
+    <description>
+        Karenderia Order Taking App
+    </description>
+    <author email="basti@codemywebapps.com" href="http://cordova.io">
+        codemywebapps.com
+    </author>
+    <icon src="icon.png" />           
+    <content src="index.html" />
+               
+	<preference name="orientation" value="portrait" />
+	<preference name="android-build-tool" value="gradle" />
+	<preference name="permissions" value="none"/>
+		
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" />    
+    <gap:plugin name="cordova-plugin-device" />		
+	<gap:plugin name="cordova-plugin-inappbrowser" />		
+	<gap:plugin name="cordova-plugin-splashscreen" />	
+	<gap:plugin name="cordova-plugin-geolocation" />
+	<gap:plugin name="cordova-plugin-network-information" />
+
+	<gap:splash src="splash.png" />
+	<preference name="AutoHideSplashScreen" value="false" />  	
+    <preference name="SplashScreenDelay" value="10000" />  
+	
+    <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
+    
+</widget>

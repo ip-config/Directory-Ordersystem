@@ -1,0 +1,605 @@
+.wrapper{
+border:0px solid red;
+padding:8px;
+}
+
+.wrapper-white{
+background:#fff;
+padding:15px 8px;
+}
+
+.center{
+text-align:center;
+}
+.field-section{
+padding:8px;
+}
+.home-header,
+.orange-header
+{
+max-width:100%;
+background:#f75d34;
+color:#fff;
+padding-top:10px;
+padding-bottom:15px;
+}
+.orange-header{
+padding-left:8px;
+padding-right:8px;
+}
+
+.home-header img,
+.full-image
+{
+display:block;
+margin:auto;
+max-width:70%;
+}
+.navigation-bar{
+background:#f75d34;
+color:#fff;
+border:none;
+}
+
+.white,
+.toolbar-button,
+.ons-back-button__icon,
+.restauran-title.white
+{
+color:#fff;
+}
+
+.green,
+.icon-green,
+.myfa-check
+{
+color:#00B279;
+}
+
+
+.button.green-btn{
+background:#00B279;
+}
+
+.button.blue-btn{
+background:#3B5998;
+}
+
+.pad20{
+padding:20px;
+}
+
+.pad25{
+padding:25px;
+}
+
+.padtop25{
+padding-top:25px;
+padding-bottom:25px;
+}
+
+.tab-bar{
+background:#00B279;
+}
+.clear{
+clear:both;
+}
+.search-btn{
+position:absolute;
+top:7px;;
+right:15px;
+}
+
+.home-page,
+.filter-options
+{
+z-index:10;
+position:relative;
+}
+
+/** menu backround */
+.page--menu-page__background {
+/*background-color: #333;
+color: white;*/
+/*background-color:#363535; color:#868686;*/
+background-color:#F2F2F3;
+color:#333;
+}
+
+.main-menu-list,
+.bottom-menu-item:first-child,
+.bottom-menu-item
+{
+/*border-color: #393939;*/
+/*border-color:#4C4C4C;
+color: #acacab;*/
+
+border-color:#DFDFE0;
+color: #333;
+
+background-color: transparent;
+background-image: none !important;
+font-size:15px;
+}
+.bottom-menu-item span{
+padding-left:10px;
+}
+.right{
+float:right;
+}
+.text-right{
+text-align:right;
+}
+
+.filter-options span,
+.filter-options .checkbox,
+.location-options .radio-button
+{
+color:#666;
+}
+.results-header{
+background:#00B279;
+color:#fff;
+text-align:center;
+padding-top:6px;
+padding-bottom:6px;
+font-size:14px;
+z-index:11;
+}
+
+.arrow_box { position: relative; background: #00B279; } .arrow_box:after { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 178, 121, 0); border-top-color: #00B279; border-width: 8px; margin-left: -8px; }
+
+.modal{
+background:rgba(255, 255, 255, 0.1);
+}
+.modal__content{
+color:#666;
+}
+
+#search-text,
+.concat-text
+{
+width: 100%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+}
+.restaurant-list .logo-wrap,
+.restaurant-list .logo-wrap2,
+.logo-wrap
+{
+height: 80px;
+width: 80px;
+display:block;
+margin:auto;
+background:#fff;
+}
+
+.logo-wrap.logo-non-auto{
+float:left;
+}
+
+.logo-wrap img,
+.logo-wrap2 img
+{
+max-width:100%;
+margin:auto;
+display:block;
+}
+
+.restaurant-list .row,
+.review-list .row,
+.list-header
+{
+padding-top:8px;
+padding-bottom:8px;
+}
+.restaurant-list p,
+#page-itemdisplay p.description,
+.onsen-display p.description,
+.small-font-dim,
+#page-receipt .wrapper p,
+#page-merchantinfo .wrapper p,
+address,
+.list-dim-text .list__item,
+#page-booking-ty .wrapper p,
+.settings-list
+{
+line-height:1;
+font-size:14px;
+color:#666;
+margin:8px 0;
+font-style:normal;
+}
+
+.small-font-dim-smaller,
+.small-font-dim.small-font-dim-smaller
+{
+font-size:12px;
+}
+
+.col-image,
+.col-description
+{
+line-height:normal;
+}
+.restauran-title,
+.restaurant-list .restauran-title,
+.title,
+.total,
+.total_value,
+#page-merchantinfo h3,
+#page-merchantinfo h5,
+#page-prelogin h4,
+#page-orders .col-orders,
+#page-login h4
+{
+font-weight:normal;
+color:#262626;
+margin:0;
+font-size:18px;
+}
+
+#page-merchantinfo h5{
+font-size:17px;
+margin:5px 0 8px;
+}
+
+.total_value{
+font-size:20px;
+font-weight:bold;
+}
+
+.p-small,
+.restaurant-list p.p-small
+{
+font-size:12px;
+}
+.bold{
+font-weight:800;
+}
+.border-left{
+border-left:1px solid #666;
+padding-left:8px;
+}
+
+.restaurant-list .list-item-container:nth-child(even){
+/*background:#F7F7F7;*/
+}
+.notification.open,
+.notification.pre-order
+{
+background:#00B279;
+}
+
+#category-list .row{
+color:#262626;
+font-size:18px;
+}
+
+.list-header
+{
+font-weight:normal;
+color:#666;
+margin:0;
+font-size:17px;
+}
+
+.text-right{
+text-align:right;
+}
+#menu-list price,
+price
+{
+font-weight:bold;
+color:#262626;
+font-size:13px;
+}
+.item-header{
+height:170px;
+background:#fff;
+background-repeat: no-repeat !important;
+background-size: contain !important;
+background-position:center !important;
+}
+
+#page-itemdisplay .title{
+border-bottom:1px solid #DDDDDD;
+padding-bottom: 8px;
+padding-top: 8px;
+}
+#page-itemdisplay .title{
+font-size:21px;
+}
+
+#page-itemdisplay price,
+.onsen-display price
+{
+font-size:14px;
+}
+
+.grey-border-top{
+border-top:1px solid #DDDDDD;
+}
+.grey-border-top2{
+border-top:2px solid #DDDDDD;
+}
+.grey-border-bottom{
+border-bottom:1px solid #DDDDDD;
+}
+
+#page-itemdisplay .grey-border-bottom{
+border-bottom:2px solid #00B279;
+}
+#page-itemdisplay .qty{
+width:100%;
+}
+
+#page-itemdisplay p.description.item-name,
+.onsen-display p.description.item-name
+{
+display:inline;
+}
+
+#page-itemdisplay .list-header,
+.onsen-display .list-header
+{
+padding-top:5px;
+padding-bottom:5px;
+}
+
+#page-itemdisplay .radio-button__checkmark,
+.onsen-display .radio-button__checkmark,
+#page-locations .radio-button__checkmark,
+#page-languageoptions .radio-button__checkmark
+{
+border:1px solid #ddd;
+}
+
+.quantity-center{
+margin-top: 7px;
+text-align: right;
+color:#666;
+padding-right:8px;
+}
+.text-left{
+text-align:left;
+}
+.text-right{
+text-align:right;
+}
+.text-center{
+text-align:center;
+}
+.cart-total-wrap{
+margin-top:25px;
+}
+
+.cart
+{
+font-size:30px;
+}
+
+.cart-num,
+#page-cart .numeric_only,
+#page-cart .qty,
+.order-apply-changes,
+.row-del-wrap,
+.order-change-wrapper,
+.payon-delivery-wrapper,
+.logout-menu,
+.delete-addressbook,
+.select-addressbook,
+.page-login-fb,
+.voucher-wrap,
+.remove-voucher
+{
+display:none;
+}
+
+.text-big,
+#page-merchantinfo h3
+{
+font-size:20px;
+}
+
+.total-amount{
+margin:auto;
+}
+#page-cart .text-big,
+#page-checkoutsignup .text-big,
+#page-shipping .text-big,
+#page-paymentoption .text-big,
+{
+margin-top:7px;
+}
+
+.onsen-display .row-no-border,
+.row-no-border
+{
+border:none;
+}
+.small-input{
+width:60px;
+}
+
+#cart-item .line-separator{
+border-bottom:none;
+line-height: 10px;
+min-height: 10px;
+}
+
+.delete-item{
+background:#DEDEDE;
+color: #FFFFFF;
+font-size: 15px;
+font-weight: normal;
+line-height: 20px;
+padding: 4px 8px;
+}
+
+.price-normal price{
+font-weight:normal;
+}
+.small-red-text{
+color:#FF0000;
+font-size:12px;
+margin:5px 10px;
+}
+
+.delivery_date,
+.delivery_time,
+.field-wrapper input,
+.field-wrapper email,
+.field-wrapper password,
+.order_notes
+{
+width:100%;
+}
+.field-wrapper{
+padding:8px 0;
+}
+
+.help-block.form-error{
+color: #FF0000;
+display: block;
+font-size: 12px;
+text-align: right;
+}
+
+.cod{
+color:#05A183;
+}
+.pyr{
+color:#333476;
+}
+.paypal{
+color:#009CDE;
+}
+
+#page-paymentoption .logo-wrap{
+height:auto;
+width:50px;
+margin-right:0;
+}
+
+.myfa-check{
+font-size:100px;
+}
+
+price.discount,
+#menu-list price.discount
+{
+color:#D4232B;
+margin-right:5px;
+text-decoration:line-through;
+}
+.checkout-icon{
+font-size:40px;
+}
+
+.list-dim-text .list__item{
+line-height:normal;
+min-height: inherit;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+#merchant-map,
+#map_canvas
+{
+width:100%;
+min-height:250px;
+}
+
+.review-list .icon-user{
+font-size:50px;
+color:#666;
+}
+#page-orders .col-order-stats{
+}
+#page-orders .col-order-stats .notification{
+vertical-align:middle;
+font-size:14px;
+display:inline-block;
+}
+
+#page-orders .col-orders{
+font-size:14px;
+}
+
+#page-addressbook-details .small-font-dim{
+display:inline-block;
+}
+.loading-screen{
+height: 100%;
+position: absolute;
+top: 0;
+width: 100%;
+background:#101317;
+}
+
+.loading-screen .inner{
+color: #FFFFFF;
+font-family: arial;
+margin-top: 25%;
+position: relative;
+text-align: center;
+}
+
+.padding-left10{
+padding-left:10px;
+}
+
+.padding-left5{
+padding-left:5px;
+}
+
+.pad-top10{
+padding-top:10px;
+}
+
+.pad-top20{
+padding-top:20px;
+}
+
+.settings-header {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.4;
+  padding: 10px 0 0px 10px;
+  margin-bottom: -4px;
+}
+.settings-list {
+  margin-top: 10px;
+}
+
+.switch-wrapper{
+border:1px solid red;
+}
+
+.no-connection {
+text-align:center;
+padding-top:60px;
+display:none;
+}
+
+.no-connection #ion-wifi{
+color:#ddd;
+font-size:100px;
+}
+.no-connection p{
+color:#666;
+font-size:20px;
+margin-bottom:10px;
+margin-top:5px;
+}
+
+#voucher-wrap{
+margin-bottom:15px;
+}
+
+.border{
+/*border:1px solid red !important;*/
+}

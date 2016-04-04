@@ -1,0 +1,193 @@
+http://stackoverflow.com/questions/27820327/disable-onsen-ui-sliding-menu-for-login-page
+
+https://www.dropbox.com/s/dohtl2h0g136bt9/KarenderiaMobileApp-Demo.apk?dl=0
+https://www.dropbox.com/s/dohtl2h0g136bt9/KarenderiaMobileApp-Demo.apk?dl=0
+
+new
+https://www.dropbox.com/s/fb0yksel6bpus04/KarenderiaMobileApp-Demo-1.0.apk?dl=1
+
+/*var page = kNavigator.getCurrentPage();		
+		var address = page.options.address;
+		dump(address);*/
+		
+		
+http://www.w3schools.com/html/html5_webstorage.asp
+http://samcroft.co.uk/2013/using-localstorage-to-store-json/
+http://www.kirupa.com/html5/storing_and_retrieving_an_array_from_local_storage.htm
+
+
+paypal 
+https://github.com/paypal/PayPal-Cordova-Plugin/tree/170bf40
+https://devblog.paypal.com/paypal-cordova-plugin-released/
+https://github.com/paypal/PayPal-Cordova-Plugin#basic-example-of-the-app-defined-in-wwwjsindexjs
+http://www.excellentwebworld.com/integrate-paypal-in-phonegap.html
+https://github.com/mayurloved/Paypal-Phonegap
+
+maps
+http://www.christianengvall.se/phonegap-and-google-maps/
+
+splash
+http://phonegap.com/blog/2015/11/17/config_xml_update/
+https://cordova.apache.org/docs/en/latest/config_ref/images.html
+
+http://www.htmlcenter.com/blog/phonegap-plugins-mobile-application-projects/
+
+   <ons-row class="row">
+        <ons-col class="concat-text" width="80%"><p class="description">12.2 regular</p></ons-col>
+        <ons-col ><price>$ 10.00</price></ons-col>
+     </ons-row>
+     
+	 
+<ons-list>   
+       <ons-list-header class="list-header">Price</ons-list-header>
+	   <ons-list-item modifier="tappable">
+	      <label class="checkbox checkbox--list-item">
+		  <input type="checkbox" name="price" class="price" value="1" >
+		  <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+		  Delivery & Pickup
+		  </label>
+	   </ons-list-item>   
+   </ons-list>	 
+   
+
+   
+date picker
+http://amsul.ca/pickadate.js/
+http://bikasv.com/blog/2013/04/14/cordova-datepicker/   
+http://curioussolutions.github.io/DateTimePicker/
+
+PUSH sample
+http://localhost/postapp2/cron/TestPush
+
+API KEY = AIzaSyAYLsRlDeU-3qVsP6JDv5WY3oR1A39PWeE
+
+http://ticons.fokkezb.nl/
+
+
+<link rel="stylesheet" href="lib/pickadate/themes/default.css">
+<link rel="stylesheet" href="lib/pickadate/themes/default.date.css">
+<link rel="stylesheet" href="lib/pickadate/themes/default.time.css">
+
+<script src="lib/pickadate/picker.js"></script>
+<script src="lib/pickadate/picker.date.js"></script>
+<script src="lib/pickadate/picker.time.js"></script>
+<script src="lib/pickadate/legacy.js"></script>
+
+
+ALL STORAGE
+shipping_address
+search_address
+client_token
+merchant_id
+transaction_type
+merchant_logo
+order_total
+merchant_name
+
+total_w_tax
+currency_code
+paymet_desc
+order_id
+device_id
+country_code_set
+
+http://codecanyon.net/item/mobionic-phonegap-cordova-full-hybrid-app/10191423?s_phrase=ionic&s_rank=25
+
+http://localhost/postapp2/cron/TestPush
+
+
+truncate table mt_order;
+truncate table mt_order_details;
+truncate table mt_order_delivery_address;
+truncate table mt_order_history;
+truncate table mt_payment_order;
+
+
+truncate table mt_client;
+truncate table mt_mobile_registered;
+truncate table mt_address_book;
+
+
+http://localhost/restomulti/mobileapp/api/loadCart?merchant_id=1&search_address=Guadalupe%20Nuevo%2C%20Makati%2C%20NCR%2C%20Philippines&cart=[{%22item_id%22:%221%22,%22qty%22:%221%22,%22price%22:%22100|small%22,%22sub_item%22:[],%22cooking_ref%22:[],%22ingredients%22:[]}]&transaction_type=null&debug
+
+Array
+(
+    [merchant_id] => 1
+    [search_address] => Guadalupe Nuevo, Makati, NCR, Philippines
+    [cart] => [{"item_id":"1","qty":"1","price":"100|small","sub_item":[],"cooking_ref":[],"ingredients":[]}]
+    [transaction_type] => null
+    [debug] => 
+)
+
+work this tomorow
+
+http://localhost/restomulti/mobileapp/api/placeOrder?merchant_id=1&cart=[{%22item_id%22%3A%221%22%2C%22qty%22%3A%221%22%2C%22price%22%3A%22100|small%22%2C%22sub_item%22%3A[{%22subcat_id%22%3A1%2C%22value%22%3A%221|1|extra%20cheese%22%2C%22qty%22%3A%221%22}%2C{%22subcat_id%22%3A2%2C%22value%22%3A%223|0.5|cream%22%2C%22qty%22%3A%22itemqty%22}]%2C%22cooking_ref%22%3A[{%22value%22%3A%22medium%20well%22}]%2C%22ingredients%22%3A[{%22value%22%3A%22new%20ingredients%22}]}]&transaction_type=delivery&delivery_date=2015-11-03&next_step=payment_option&street=guadalupe+Nuevo&city=makati&state=ncr&zipcode=&contact_phone=0995351201&delivery_instruction=turn+left&client_token=k07010kax79pi968e2f07945090c1802961bffd2e30f8b1&search_address=Guadalupe%20Nuevo,%20Makati,%20NCR,%20Philippines&payment_list=cod&order_change=100
+
+http://localhost/restomulti/mobileapp/api/placeOrder?merchant_id=1&cart=[{%22item_id%22%3A%221%22%2C%22qty%22%3A%221%22%2C%22price%22%3A%22100|small%22%2C%22sub_item%22%3A[{%22subcat_id%22%3A1%2C%22value%22%3A%221|1|extra%20cheese%22%2C%22qty%22%3A%221%22}%2C{%22subcat_id%22%3A2%2C%22value%22%3A%223|0.5|cream%22%2C%22qty%22%3A%22itemqty%22}]%2C%22cooking_ref%22%3A[{%22value%22%3A%22medium%20well%22}]%2C%22ingredients%22%3A[{%22value%22%3A%22new%20ingredients%22}]}]&transaction_type=delivery&delivery_date=2015-11-03&next_step=payment_option&street=guadalupe+Nuevo&city=makati&state=ncr&zipcode=&contact_phone=0995351201&delivery_instruction=turn+left&client_token=k07010kax79pi968e2f07945090c1802961bffd2e30f8b1&search_address=Guadalupe%20Nuevo,%20Makati,%20NCR,%20Philippines&payment_list=cod&order_change=100
+
+
+
+
+foreach ($json_data as $val_item) {
+	dump($val_item);
+	$price_size=explode("|",$val_item['price']);					    	
+	$item_details=Yii::app()->functions->getFoodItem($val_item['item_id']);
+	$discounted_price=isset($price_size[0])?$price_size[0]:0;
+	if ($item_details['discount']>0){
+		$discounted_price=$discounted_price-$item_details['discount'];
+	}					    
+	
+	/*addon */
+	$addon_added='';
+	if (AddonMobileApp::isArray($val_item['sub_item'])){
+		foreach ($val_item['sub_item'] as $key_sub=>$val_sub) {					    			
+			$item_sub=explode("|",$val_sub[0]);
+			dump($item_sub);
+			$addon_added[]=array(
+			  'addon_name'=>$item_sub[2],
+			  'addon_category'=>''
+			);
+		}
+	}
+						    
+	$params_order=array( 
+	  'order_id'=>$order_id,
+	  'client_id'=>$client_id,
+	  'item_id'=>$val_item['item_id'],
+	  'item_name'=>$item_details['item_name'],
+	  'order_notes'=>'',
+	  'normal_price'=>isset($price_size[0])?$price_size[0]:0,
+	  'discounted_price'=>$discounted_price,
+	  'size'=>isset($price_size[1])?$price_size[1]:'',
+	  'qty'=>$val_item['qty'],
+	  'cooking_ref'=>$val_item['cooking_ref'],		
+	  'addon'=>'',
+	  'ingredients'=>json_encode($val_item['ingredients']),
+	  'non_taxable'=>$item_details['non_taxable']
+	);
+	dump($params_order);
+}
+
+
+
+   <ons-list class="review-list">
+	  <ons-list-item modifier="tappable" class="list-item-container">
+	     <ons-row class="row"> 
+		     <ons-col class="col-image" width="98px">
+			   <ons-icon icon="fa-user" class="icon-user"></ons-icon>
+			 </ons-col>
+			 
+			 <ons-col class="col-description">
+			   <div class="rating-stars" data-score="1"></div>       
+			   <p class="restauran-title concat-text">Ceazar</p>
+			   <p class="small-font-dim small-font-dim-smaller">3 weeks ago</p>    
+			   <p class="concat-text small-font-dim">lorem ipsum lorem ipsum lorem ipsum</p>
+			 </ons-col>
+			 
+		 </ons-row>
+	  </ons-list-item>
+	</ons-list>
+	
+<gap:plugin name="cordova-plugin-googlemaps" source="npm">
+	   <param name="API_KEY_FOR_ANDROID" value="AIzaSyB4-BY-fl6CXMy-6ykvnazQcQ2nzH2227g" />
+	</gap:plugin>	
