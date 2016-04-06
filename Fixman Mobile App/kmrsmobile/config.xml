@@ -3,12 +3,12 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "kmrs.mobile.app"
     version   = "1.3.2">
-    <name>Karenderia Mobile App</name>
+    <name>Foodup Mobile App</name>
     <description>
-        Karenderia mobile app version
+        Foodup app version
     </description>
-    <author email="basti@codemywebapps.com" href="http://cordova.io">
-        codemywebapps.com
+    <author email="alec@bitcoin42.com" href="http://alechahn.de">
+        alechahn.de
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
